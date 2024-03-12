@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    uses: tegioz/contribcard-sites/.github/workflows/build-and-deploy.yml@main
+    uses: cncf/contribcard-sites/.github/workflows/build-and-deploy.yml@main
     with:
       project: kubernetes
     secrets: inherit

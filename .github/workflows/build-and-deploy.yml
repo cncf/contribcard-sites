@@ -8,7 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on:
-      labels: ubuntu-latest
+      labels: ubuntu-latest-8-cores
     container:
       image: public.ecr.aws/g6m3a0y9/contribcard
       options: --user root

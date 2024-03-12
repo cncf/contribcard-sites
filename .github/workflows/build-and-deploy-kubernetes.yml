@@ -1,0 +1,11 @@
+name: Kubernetes build and deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    uses: tegioz/contribcard-sites/.github/workflows/build-and-deploy.yml@main
+    with:
+      project: kubernetes
+    secrets: inherit

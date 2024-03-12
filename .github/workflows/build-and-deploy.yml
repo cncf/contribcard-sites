@@ -1,0 +1,42 @@
+on:
+  workflow_call:
+    inputs:
+      project:
+        required: true
+        type: string
+
+jobs:
+  build-and-deploy:
+    runs-on:
+      labels: ubuntu-latest
+    container:
+      image: public.ecr.aws/g6m3a0y9/contribcard
+      options: --user root
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Install tar in container (needed for the cache)
+        run: apk add --update --no-progress tar
+
+      - name: Setup cache
+        uses: actions/cache@v3
+        with:
+          path: /tmp/contribcard-cache
+          key: contribcard-cache-${{ inputs.project }}-${{ github.sha }}-${{ github.run_id }}
+          restore-keys: |
+            contribcard-cache-${{ inputs.project }}-
+
+      - name: Build site
+        env:
+          GITHUB_TOKENS: ${{ secrets.GH_TOKENS }}
+          RUST_LOG: "contribcard=debug"
+        run: |
+          contribcard build \
+            --name ${{ inputs.project }} \
+            --settings-file ./${{ inputs.project }}/settings.yml \
+            --cache-dir /tmp/contribcard-cache \
+            --base-cache-db-url https://d2j6qp8jhspooo.cloudfront.net/${{ inputs.project }}.db \
+            --base-cache-db-username ${{ secrets.BASE_CACHE_DB_USERNAME }} \
+            --base-cache-db-password ${{ secrets.BASE_CACHE_DB_PASSWORD }} \
+            --output-dir /tmp/contribcard

@@ -40,3 +40,13 @@ jobs:
             --base-cache-db-username ${{ secrets.BASE_CACHE_DB_USERNAME }} \
             --base-cache-db-password ${{ secrets.BASE_CACHE_DB_PASSWORD }} \
             --output-dir /tmp/contribcard
+
+      - name: Deploy site
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          contribcard deploy s3 \
+            --bucket contribcard-${{ inputs.project }} \
+            --content-dir /tmp/contribcard

@@ -15,6 +15,7 @@ repositories: []
 
 # Theme settings (required).
 theme:
+  base_url: "https://contribcard.clotributor.dev"
   email_subject: "Happy #kuberTENes!"
   favicon_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/tegioz/cncf/kubernetes/favicon.png"
   logo_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/tegioz/cncf/kubernetes/logo.svg"

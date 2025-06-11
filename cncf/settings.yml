@@ -243,9 +243,9 @@ repositories: []
 theme:
   base_url: "https://d1qc37tbe07dkf.cloudfront.net"
   email_subject: "Happy #cTENcf!"
-  favicon_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/tegioz/cncf/cncf/favicon.png"
-  logo_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/tegioz/cncf/cncf/logo.svg"
+  favicon_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/cncf/favicon.png"
+  logo_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/cncf/logo.svg"
   og_description: "Happy #cTENcf!"
-  og_image_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/tegioz/cncf/cncf/og_image.png"
+  og_image_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/cncf/og_image.png"
   og_title: "CNCF ContribCard"
   social_message: "Happy #cTENcf! Check out my #FirstContribution to CNCF projects #ContribCard #CNCF10"

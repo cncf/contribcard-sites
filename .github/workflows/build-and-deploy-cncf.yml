@@ -1,0 +1,13 @@
+name: CNCF build and deploy
+
+on:
+  schedule:
+    - cron: "0 10 * * 1"
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    uses: cncf/contribcard-sites/.github/workflows/build-and-deploy.yml@main
+    with:
+      project: cncf
+    secrets: inherit

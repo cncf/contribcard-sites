@@ -1,6 +1,6 @@
 # Kubernetes settings file
 
-# List of GitHub organizations to scan for contributions
+# List of GitHub organizations to scan for contributions (optional).
 organizations:
   - etcd-io
   - kubernetes
@@ -9,3 +9,16 @@ organizations:
   - kubernetes-incubator
   - kubernetes-retired
   - kubernetes-sigs
+
+# List of GitHub repositories to scan for contributions (optional).
+repositories: []
+
+# Theme settings (required).
+theme:
+  email_subject: "Happy #kuberTENes!"
+  favicon_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/kubernetes/favicon.png"
+  logo_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/kubernetes/logo.png"
+  og_description: "Happy #kuberTENes!"
+  og_image_url: "https://raw.githubusercontent.com/cncf/contribcard-sites/refs/heads/main/kubernetes/og_image.png"
+  og_title: "Kubernetes ContribCard"
+  social_message: "Happy #kuberTENes! Check out my #FirstContribution to Kubernetes #ContribCard"

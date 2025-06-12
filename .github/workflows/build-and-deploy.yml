@@ -39,8 +39,7 @@ jobs:
             --base-cache-db-url https://d2j6qp8jhspooo.cloudfront.net/${{ inputs.project }}.db \
             --base-cache-db-username ${{ secrets.BASE_CACHE_DB_USERNAME }} \
             --base-cache-db-password ${{ secrets.BASE_CACHE_DB_PASSWORD }} \
-            --output-dir /tmp/contribcard \
-            --collect-contributions false
+            --output-dir /tmp/contribcard
 
       - name: Deploy site
         env:

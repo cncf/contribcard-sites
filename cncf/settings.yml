@@ -43,6 +43,7 @@ organizations:
   - cozystack
   - cri-o
   - crossplane
+  - crossplane-contrib
   - cubeFS
   - dapr
   - devfile

@@ -4,11 +4,15 @@ on:
       project:
         required: true
         type: string
+      runner:
+        type: string
+        required: false
+        default: ubuntu-latest-16-cores
 
 jobs:
   build-and-deploy:
     runs-on:
-      labels: ubuntu-latest-8-cores
+      labels: ${{ inputs.runner }}
     container:
       image: ghcr.io/cncf/contribcard
       options: --user root

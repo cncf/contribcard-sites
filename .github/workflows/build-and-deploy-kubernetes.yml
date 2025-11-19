@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 7 * * *"
   workflow_dispatch:
+    inputs:
+      runner:
+        description: "Runner"
+        type: string
+        required: false
+        default: ubuntu-latest-16-cores
 
 jobs:
   build-and-deploy:

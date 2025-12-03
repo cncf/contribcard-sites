@@ -153,6 +153,7 @@ organizations:
   - networkservicemesh
   - nocalhost
   - notaryproject
+  - oauth2-proxy
   - opcr-io
   - open-cluster-management-io
   - open-feature

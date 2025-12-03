@@ -14,6 +14,7 @@ organizations:
   - bpfman
   - brigadecore
   - buildpacks
+  - cadence-workflow
   - carina-io
   - cartography-cncf
   - carvel-dev
@@ -78,6 +79,7 @@ organizations:
   - in-toto
   - inclavare-containers
   - inspektor-gadget
+  - interlink-hq
   - interTwin-eu
   - istio
   - jaegertracing
@@ -86,6 +88,7 @@ organizations:
   - k8gb-io
   - k8sgpt-ai
   - k8up-io
+  - kagent-dev
   - kairos-io
   - kaito-project
   - kanisterio
@@ -107,6 +110,7 @@ organizations:
   - krator-rs
   - krkn-chaos
   - krustlet
+  - kserve
   - kuadrant
   - kuasar-io
   - kube-burner
@@ -149,6 +153,7 @@ organizations:
   - metal3-io
   - metallb
   - microcks
+  - modelpack
   - nats-io
   - networkservicemesh
   - nocalhost
@@ -177,6 +182,7 @@ organizations:
   - oras-project
   - oscal-compass
   - ovn-kubernetes
+  - oxia-db
   - parallaxsecond
   - paralus
   - perses
@@ -187,6 +193,7 @@ organizations:
   - pravega
   - project-akri
   - project-copacetic
+  - project-dalec
   - Project-HAMi
   - project-stacker
   - project-zot
@@ -227,6 +234,7 @@ organizations:
   - tokenetes
   - tremor-rs
   - trickstercache
+  - urunc-dev
   - v6d-io
   - virtual-kubelet
   - vitessio
@@ -236,6 +244,7 @@ organizations:
   - WasmEdge
   - werf
   - xline-kv
+  - xregistry
   - youki-dev
 
 # List of GitHub repositories to scan for contributions (optional).
